@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<title>Personal Homepage</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        width: 80%;
+        margin: 20px auto;
+        background: white;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1, h2 {
+        color: #333;
+    }
+    .contact-info {
+        display: none;
+        background-color: #e2e2e2;
+        padding: 10px;
+        margin-top: 20px;
+    }
+    button {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Name: Wang Yufan</h1>
+    <p>Date of Birth: 1997/05/05</p>
+    <p>Nationality: China</p>
+    <p>College: Musashino University</p>
+    <p>Graduate College: Yantai University</p>
+    <h2>Research Direction</h2>
+    <p>Machine Translation in Natural Language Processing</p>
+    <button onclick="showContact()">Contact Me</button>
+    <div class="contact-info" id="contact-info">
+        <p>Mail: wangyufan1024@gmail.com</p>
+        <p>Tel: 08071168265</p>
+        <p>WeChat: kingright123</p>
+    </div>
+</div>
+<script>
+    function showContact() {
+        var contactInfo = document.getElementById('contact-info');
+        if (contactInfo.style.display === 'none') {
+            contactInfo.style.display = 'block';
+        } else {
+            contactInfo.style.display = 'none';
+        }
+    }
+</script>
+</body>
+</html>
